@@ -328,3 +328,29 @@
 		libboost_wserialization-vc100-mt-sgd-1_61.lib
 		libboost_wserialization-vc100-s-1_61.lib
 		libboost_wserialization-vc100-sgd-1_61.lib
+
+		----------must separately-compiled-------------
+		Boost.Chrono
+		Boost.Context
+		Boost.Filesystem
+		Boost.GraphParallel
+		Boost.IOStreams
+		Boost.Locale
+		Boost.MPI
+		Boost.ProgramOptions
+		Boost.Python
+		Boost.Regex
+		Boost.Serialization
+		Boost.Signals
+		Boost.System
+		Boost.Thread
+		Boost.Timer
+		Boost.Wave
+		
+		----------option separately-compiled-------------
+		Boost.DateTime
+		Boost.Graph
+		Boost.Math
+		Boost.Random
+		Boost.Test
+		Boost.Exception
