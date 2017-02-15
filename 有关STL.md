@@ -5,7 +5,7 @@
 ## 说明
 - STL提供主要三种类型的组件:容器\迭代器\算法
 - 容器主要有两类:顺序容器\关联容器
-    - 顺序容器:vector\list\deque\stringooo等
+    - 顺序容器:vector\list\deque\string等
         - vector:
             - 创建对象\创建对象并预留一定的容量(指定分配大小,提升效率)\创建对象预留容量并初始化(通过new创建元素并放入vector时,要注意防止内存泄漏)
                 explicit vector ( const Allocator& = Allocator() ); //使用默认空间配置器创建容器对象 
