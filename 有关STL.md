@@ -8,6 +8,14 @@
     - 顺序容器:vector\list\deque\stringooo等
         - vector:
             - 创建对象\创建对象并预留一定的容量(指定分配大小,提升效率)\创建对象预留容量并初始化(通过new创建元素并放入vector时,要注意防止内存泄漏)
+                explicit vector ( const Allocator& = Allocator() ); //使用默认空间配置器创建容器对象 
+                
+                explicit vector ( size_type n, const T& value= T(), const Allocator& = Allocator() ); //创建容器并预留容量,还可以指定元素的值
+
+                template <class InputIterator>
+                vector ( InputIterator first, InputIterator last, const Allocator& = Allocator() ); //通过迭代器拷贝元素
+
+                vector ( const vector<T,Allocator>& x ); //使用其他vector创建对象
 
                 vector<int> v;
                 for(int i=1; i<=1000;i++) v.push_back(i)  #反例,没有事先预留容量或没有reserve调整容量会造成2~2的10次(1000约等于)方重新分配,效率低下
