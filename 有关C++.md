@@ -32,7 +32,7 @@
 			return 0;
 		}
 
-   	![](doc/class_member.PNG)
+![](doc/class_member.PNG)
 
 - 列表初始化
 - auto自动推导（vs Python）
