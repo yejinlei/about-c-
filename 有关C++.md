@@ -17,6 +17,38 @@
 
     - 成员对象初始化顺序，**与声明顺序有关，与初始化列表顺序无关**
 
+## C++ I/O
+![](doc/cpp_io.png)
+
+- 标准输入输出流，控制台流I/O
+	- 可以直接使用的，内置对象cin、cout、cerr、clog
+
+- 文件流I/O，ifstream、ofstream、fstream
+	- ::open
+		- mode打开模式
+			- ios::in 为输入(读)而打开文件
+			- ios::out 为输出(写)而打开文件
+			- ios::ate 初始位置：文件尾
+			- ios::app 所有输出附加在文件末尾
+			- ios::trunc 如果文件已存在则先删除该文件
+			- ios::binary 二进制方式
+		- 返回void，文件数据存放在filebuf中
+
+- 字符串流I/O
+
+- 例子
+		
+		ifstream cin("input.txt");
+		ofstream cout("output.txt");  
+		string line;
+		if (cin.is_open()) {
+			while(getline(cin, line)){
+				cout << line << endl;
+			}
+		}
+
+## C++ Strings
+
 ## C++11部分
 
 - 类内初始值
